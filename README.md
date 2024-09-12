@@ -1,1 +1,1 @@
-# Aspire-AI
+# AspirAI
