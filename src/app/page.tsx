@@ -41,6 +41,7 @@ import { ToDoList } from "./_components/to-do-list";
 import { SignInButton,SignUpButton, UserButton } from "@clerk/nextjs";
 import { GenerateTodosForm } from "./_components/generate-todos-form";
 import { DonationButton } from "./_components/donation-button";
+import { CircularProgress } from "@mui/material";
 
 export default function Home() {
   return (
@@ -86,7 +87,7 @@ export default function Home() {
         </div>
       </Unauthenticated>
       <AuthLoading>
-        <p>Loading...</p>
+        <CircularProgress />
       </AuthLoading>
     </div>
   )
