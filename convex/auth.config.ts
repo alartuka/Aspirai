@@ -1,7 +1,7 @@
 export default {
     providers: [
         {
-        domain: process.env.NEXT_PUBLIC_CONVEX_CLERK_DOMAIN,
+        domain: "https://select-feline-12.clerk.accounts.dev",
         applicationID: "convex",
     }
     ]
