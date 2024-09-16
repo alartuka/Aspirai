@@ -16,6 +16,7 @@ export const generateTodos = action({
         const user = await requireUser(ctx);
         const reponse = await openai.chat.completions.create({
             model: "meta-llama/llama-3.1-8b-instruct:free",
+            // model: "openai/gpt-3.5-turbo",
             messages: [
                 {
                     role: "system",
