@@ -10,7 +10,7 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
 export function DonationButton() {
   const [amount, setAmount] = useState(5);
   const [siteUrl, setSiteUrl] = useState('');
-  const createDonationSession = useAction(api.functions.createDonationSession);
+  // const createDonationSession = useAction(api.functions.createDonationSession);
   const { userId } = useAuth();
 
   useEffect(() => {
@@ -21,27 +21,27 @@ export function DonationButton() {
   }, []);
 
 
-  const handleDonation = async () => {
-    if (!userId) {
-      console.error("User not authenticated");
-      return;
-    }
+  // const handleDonation = async () => {
+  //   if (!userId) {
+  //     console.error("User not authenticated");
+  //     return;
+  //   }
 
-    const stripe = await stripePromise;
-    try {
-        const { sessionId } = await createDonationSession({ amount, userId, siteUrl });
+  //   const stripe = await stripePromise;
+  //   try {
+  //       const { sessionId } = await createDonationSession({ amount, userId, siteUrl });
         
-        const result = await stripe!.redirectToCheckout({
-          sessionId: sessionId,
-        });
+  //       const result = await stripe!.redirectToCheckout({
+  //         sessionId: sessionId,
+  //       });
         
-        if (result.error) {
-          console.error(result.error);
-        }
-      } catch (error) {
-        console.error("Error creating donation session:", error);
-      }
-    };
+  //       if (result.error) {
+  //         console.error(result.error);
+  //       }
+  //     } catch (error) {
+  //       console.error("Error creating donation session:", error);
+  //     }
+  //   };
   
     return (
       <div className="flex flex-col items-center space-y-4">
@@ -55,7 +55,7 @@ export function DonationButton() {
           min="1"
         />
         <button
-          onClick={handleDonation}
+          // onClick={handleDonation}
           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300"
         >
           Donate ${amount}

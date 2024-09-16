@@ -3,11 +3,9 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 
-
-
 export const metadata: Metadata = {
-  title: "Goal Getter",
-  description: "Your AI powered task creator and goal tracker",
+  title: "Aspirai",
+  description: "Turn your dreams into reality with your AI-powered goal achievement companion",
 };
 
 export default function RootLayout({

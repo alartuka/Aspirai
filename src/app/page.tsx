@@ -41,7 +41,9 @@ import { ToDoList } from "./_components/to-do-list";
 import { SignInButton,SignUpButton, UserButton } from "@clerk/nextjs";
 import { GenerateTodosForm } from "./_components/generate-todos-form";
 import { DonationButton } from "./_components/donation-button";
-import { CircularProgress } from "@mui/material";
+import { Box, Button, CircularProgress, Container, Stack, Typography } from "@mui/material";
+import Hero from "./_components/Hero";
+import Loading from "./_components/Loading";
 
 export default function Home() {
   return (
@@ -56,39 +58,28 @@ export default function Home() {
           <ToDoList />
           <GenerateTodosForm />
           <NewToDoForm />
-          <DonationButton />
+          {/* <DonationButton /> */}
         </div>
       </Authenticated>
+      
       <Unauthenticated>
-        <div className="text-center space-y-6">
-          <h1 className="text-3xl font-bold text-blue-600">Turn Goals into Reality with GoalGetter</h1>
-          <p className="text-xl">Feeling overwhelmed by your goals? GoalGetter is your personal AI-powered goal-achievement assistant.</p>
-          <ul className="text-left list-disc pl-6 space-y-2">
+        <Hero />
+        {/* <div className="text-center space-y-6"> */}
+          {/* <ul className="text-left list-disc pl-6 space-y-2">
             <li>Set any goal, big or small</li>
             <li>Get instant, AI-generated tasks to guide you</li>
             <li>Add your own custom tasks for a personalized plan</li>
             <li>Track your progress and stay motivated</li>
             <li>Achieve more, faster, and with less stress</li>
-          </ul>
-          <p className="text-lg font-semibold">Start achieving your dreams today!</p>
-          <SignInButton>
-            <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">
-              Sign In
-            </button>
-          </SignInButton>
-          <span className="text-sm text-gray-600">
-              No account yet? 
-              <SignUpButton>
-                <button className="text-blue-500 hover:underline ml-1">
-                  Sign up here
-                </button>
-              </SignUpButton>
-            </span>
-        </div>
+          </ul> */}
+          
+        {/* </div> */}
       </Unauthenticated>
+      
       <AuthLoading>
-        <CircularProgress />
+        <Loading />
       </AuthLoading>
     </div>
   )
 }
+

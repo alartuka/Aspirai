@@ -12,9 +12,15 @@
     "node": ">=14.x"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
     "@clerk/nextjs": "^5.4.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@saas-ui/react": "^2.8.10",
     "@stripe/stripe-js": "^4.4.0",
     "convex": "^1.15.0",
+    "framer-motion": "^11.5.4",
     "micro": "^10.0.1",
     "next": "14.2.8",
     "openai": "^4.58.1",
