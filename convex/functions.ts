@@ -1,7 +1,7 @@
 import {action, internalMutation, mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import {requireUser} from "./helper"
-import { stripe } from "./stripe";
+// import { stripe } from "./stripe";
 
 export const listTodos = query(
     {handler: async (ctx) => {

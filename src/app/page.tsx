@@ -40,7 +40,7 @@ import { NewToDoForm } from "./_components/new-todo-form";
 import { ToDoList } from "./_components/to-do-list";
 import { SignInButton,SignUpButton, UserButton } from "@clerk/nextjs";
 import { GenerateTodosForm } from "./_components/generate-todos-form";
-import { DonationButton } from "./_components/donation-button";
+// import { DonationButton } from "./_components/donation-button";
 import { Box, Button, CircularProgress, Container, Stack, Typography } from "@mui/material";
 import Hero from "./_components/Hero";
 import Loading from "./_components/Loading";
