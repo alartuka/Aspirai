@@ -1,25 +1,25 @@
 import React from 'react';
 import { Box, Grid, Typography, Container, Card, CardContent } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle'; 
+import {CheckCircle} from '@mui/icons-material'; 
 
 const features = [
   {
-    icon: <CheckCircleIcon color="primary" sx={{ fontSize: 40 }} />,
+    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
     title: 'AI-Generated Tasks',
     description: 'Get instant, AI-powered tasks tailored to help you achieve your goals more effectively.',
   },
   {
-    icon: <CheckCircleIcon color="primary" sx={{ fontSize: 40 }} />,
+    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
     title: 'Customizable Plans',
     description: 'Add your own custom tasks to create a plan that fits your unique needs and lifestyle.',
   },
   {
-    icon: <CheckCircleIcon color="primary" sx={{ fontSize: 40 }} />,
+    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
     title: 'Progress Tracking',
     description: 'Stay on top of your goals with progress tracking to keep you motivated and focused.',
   },
   {
-    icon: <CheckCircleIcon color="primary" sx={{ fontSize: 40 }} />,
+    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
     title: 'Achieve More with Less Stress',
     description: 'Achieve more, faster, and with less stress using Aspirai’s AI-driven guidance.',
   },
