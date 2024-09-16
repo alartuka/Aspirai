@@ -1,7 +1,7 @@
 export default {
     providers: [
         {
-        domain: "https://evident-clam-68.clerk.accounts.dev",
+        domain: process.env.NEXT_PUBLIC_CONVEX_CLERK_DOMAIN,
         applicationID: "convex",
     }
     ]
