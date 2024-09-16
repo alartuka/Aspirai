@@ -19,7 +19,7 @@ export default function Hero() {
           </Typography>
 
           <Typography variant="h6">
-            Whether you're tackling a big project or focusing on personal growth, 
+            Whether you&apos;re tackling a big project or focusing on personal growth, 
             Aspirai provides personalized tasks and progress tracking to keep you moving forward. 
             Stay motivated, organized, and achieve more with less stress using Aspirai 
             — your AI-powered goal achievement companion.

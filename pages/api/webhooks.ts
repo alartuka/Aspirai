@@ -1,16 +1,16 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { buffer } from 'micro';
+// import { NextApiRequest, NextApiResponse } from 'next';
+// import { buffer } from 'micro';
 // import Stripe from 'stripe';
 
 // const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 //   apiVersion: '2024-06-20',
 // });
 
-export const config = {
-    api: {
-      bodyParser: false,
-    },
-  };
+// export const config = {
+//     api: {
+//       bodyParser: false,
+//     },
+//   };
 
 
 // export default async function handler(req: NextApiRequest, res: NextApiResponse) {
