@@ -113,11 +113,11 @@ export const createManyTodos = internalMutation({
 // });
 
 // Define the type for createDonationSession arguments
-type CreateDonationSessionArgs = {
-  amount: number;
-  userId: string;
-  siteUrl: string;
-};
+// type CreateDonationSessionArgs = {
+//   amount: number;
+//   userId: string;
+//   siteUrl: string;
+// };
 
 // export const createDonationSession = action({
 //   args: {
