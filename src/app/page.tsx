@@ -50,6 +50,9 @@ export default function Home() {
       <Unauthenticated>
         <Hero />
         <Features />
+        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+          <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
+        </Box>
       </Unauthenticated>
 
       <AuthLoading>
