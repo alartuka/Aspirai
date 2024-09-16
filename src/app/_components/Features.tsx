@@ -1,28 +1,28 @@
 import React from 'react';
 import { Box, Grid, Typography, Container, Card, CardContent } from '@mui/material';
-import {CheckCircle} from '@mui/icons-material'; 
+import {AssignmentTurnedIn, CheckCircle, EmojiEvents, PlaylistAddCheck, TrendingUp} from '@mui/icons-material'; 
 
 const features = [
-  {
-    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
-    title: 'AI-Generated Tasks',
-    description: 'Get instant, AI-powered tasks tailored to help you achieve your goals more effectively.',
-  },
-  {
-    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
-    title: 'Customizable Plans',
-    description: 'Add your own custom tasks to create a plan that fits your unique needs and lifestyle.',
-  },
-  {
-    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
-    title: 'Progress Tracking',
-    description: 'Stay on top of your goals with progress tracking to keep you motivated and focused.',
-  },
-  {
-    icon: <CheckCircle color="primary" sx={{ fontSize: 40 }} />,
-    title: 'Achieve More with Less Stress',
-    description: 'Achieve more, faster, and with less stress using Aspirai’s AI-driven guidance.',
-  },
+    {
+      icon: <AssignmentTurnedIn color="primary" sx={{ fontSize: 40 }} />,
+      title: 'AI-Generated Tasks',
+      description: 'Get instant, AI-powered tasks tailored to help you achieve your goals more effectively.',
+    },
+    {
+      icon: <PlaylistAddCheck color="primary" sx={{ fontSize: 40 }} />,
+      title: 'Customizable Plans',
+      description: 'Add your own custom tasks to create a plan that fits your unique needs and lifestyle.',
+    },
+    {
+      icon: <TrendingUp color="primary" sx={{ fontSize: 40 }} />,
+      title: 'Progress Tracking',
+      description: 'Stay on top of your goals with progress tracking to keep you motivated and focused.',
+    },
+    {
+      icon: <EmojiEvents color="primary" sx={{ fontSize: 40 }} />,
+      title: 'Achieve More with Less Stress',
+      description: 'Achieve more, faster, and with less stress using Aspirai’s AI-driven guidance.',
+    },
 ];
 
 export default function Features() {
@@ -32,7 +32,7 @@ export default function Features() {
         <Typography variant="h4" component="h2" align="center" gutterBottom sx={{ fontWeight: 'bold' }}>
           Features
         </Typography>
-        <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
+        <Typography variant="subtitle1" align="center" color="textSecondary">
           Explore the powerful features that make Aspirai your ultimate goal-achievement companion.
         </Typography>
         <Grid container spacing={4} sx={{ mt: 4 }}>
@@ -55,17 +55,19 @@ export default function Features() {
                   },
                 }}
               >
-                {/* <CardActionArea> */}
-                  <CardContent sx={{ textAlign: 'center' }}>
+                <CardContent sx={{ textAlign: 'center' }}>
+
                     {feature.icon}
+
                     <Typography variant="h6" component="h3" gutterBottom sx={{ mt: 2, fontWeight: '600' }}>
-                      {feature.title}
+                        {feature.title}
                     </Typography>
+
                     <Typography variant="body2" color="textSecondary">
-                      {feature.description}
+                        {feature.description}
                     </Typography>
-                  </CardContent>
-                {/* </CardActionArea> */}
+
+                </CardContent>
               </Card>
             </Grid>
           ))}
