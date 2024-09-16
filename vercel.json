@@ -8,9 +8,7 @@
   ],
   "build": {
     "env": {
-      "VERCEL_CACHE": "false",
-
-      "NEXT_PUBLIC_SITE_URL": "@site_url"
+      "VERCEL_CACHE": "false"
     }
   }
 }
