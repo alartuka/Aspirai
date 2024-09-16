@@ -17,7 +17,6 @@ export default function Home() {
       <Authenticated>
         <AppBar position="static" sx={{ backgroundColor: 'primary.main', mb: 4 }}>
           <Toolbar>
-
             <Typography variant="h1" component="h1" sx={{ flexGrow: 1 }}>
               Aspir
               <span style={{ fontWeight: 'bold', color: '#1976d2' }}>ai</span>
