@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography, Container, Card, CardContent } from '@mui/material';
-import {AssignmentTurnedIn, CheckCircle, EmojiEvents, PlaylistAddCheck, TrendingUp} from '@mui/icons-material'; 
+import {AssignmentTurnedIn, EmojiEvents, PlaylistAddCheck, TrendingUp} from '@mui/icons-material'; 
 
 const features = [
     {
