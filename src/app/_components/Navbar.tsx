@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Button, Box, Stack } from '@mui/material';
-import { Menu as MenuIcon, AccountCircle } from '@mui/icons-material';
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Button, Box } from '@mui/material';
+import { Menu as MenuIcon } from '@mui/icons-material';
 import { UserButton } from "@clerk/nextjs";
 
 

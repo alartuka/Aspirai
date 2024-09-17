@@ -3,13 +3,12 @@
 import { Authenticated, Unauthenticated, AuthLoading } from "convex/react";
 import { NewToDoForm } from "./_components/new-todo-form";
 import { ToDoList } from "./_components/to-do-list";
-import { UserButton } from "@clerk/nextjs";
 import { GenerateTodosForm } from "./_components/generate-todos-form";
 // import { DonationButton } from "./_components/donation-button";
 import Hero from "./_components/Hero";
 import Loading from "./_components/Loading";
 import Features from "./_components/Features";
-import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import NavBar from "./_components/Navbar";
 
 export default function Home() {
@@ -48,7 +47,7 @@ export default function Home() {
           <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
             <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
           </Box>
-          
+
         </Box>
       </Unauthenticated>
 
