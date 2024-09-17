@@ -1,20 +1,39 @@
 import { useQuery,useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { Id } from "../../../convex/_generated/dataModel";
+import { Box, Grid } from "@mui/material";
+
 
 export function ToDoList(){
     const todos = useQuery(api.functions.listTodos);
-    return(<ul className="space-y-2">
-        {todos?.map(({_id, title, description, completed}, index) => (
-          <ToDoItem  
-          key={index} 
-          id={_id}
-          title={title} 
-          description={description} 
-          completed={completed} 
-          />
+    return(
+    // <ul className="space-y-2">
+    //     {todos?.map(({_id, title, description, completed}, index) => (
+    //       <ToDoItem  
+    //       key={index} 
+    //       id={_id}
+    //       title={title} 
+    //       description={description} 
+    //       completed={completed} 
+    //       />
+    //     ))}
+    //     </ul>
+
+    <Box sx={{ mt: 2 }}>
+      <Grid container spacing={2}>
+        {todos?.map(({ _id, title, description, completed }, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            
+            <ToDoItem
+              id={_id}
+              title={title}
+              description={description}
+              completed={completed}
+            />
+          </Grid>
         ))}
-        </ul>
+      </Grid>
+    </Box>
     )
 }
 

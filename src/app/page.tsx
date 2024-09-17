@@ -10,22 +10,14 @@ import Hero from "./_components/Hero";
 import Loading from "./_components/Loading";
 import Features from "./_components/Features";
 import { AppBar, Box, Container, Toolbar, Typography } from "@mui/material";
+import NavBar from "./_components/Navbar";
 
 export default function Home() {
   return (
-    <Box sx={{ py: 8, background: 'linear-gradient(to right, #f5f7fa, #c3cfe2)' }}>
+    <Box sx={{ background: 'linear-gradient(to right, #f5f7fa, #c3cfe2)' }}>
       <Authenticated>
-        <AppBar position="static" sx={{ backgroundColor: 'primary.main', mb: 4 }}>
-          <Toolbar>
-            <Typography variant="h1" component="h1" sx={{ flexGrow: 1 }}>
-              Aspir
-              <span style={{ fontWeight: 'bold', color: '#1976d2' }}>ai</span>
-            </Typography>
 
-            <UserButton />
-
-          </Toolbar>
-        </AppBar>
+        <NavBar />
 
         <Container maxWidth="md" sx={{ py: 4 }}>
 
@@ -48,10 +40,15 @@ export default function Home() {
       </Authenticated>
 
       <Unauthenticated>
-        <Hero />
-        <Features />
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-          <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
+        <Box sx={{ py: 8 }}>
+
+          <Hero />
+          <Features />
+
+          <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+            <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
+          </Box>
+          
         </Box>
       </Unauthenticated>
 

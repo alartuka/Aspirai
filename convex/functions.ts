@@ -3,6 +3,7 @@ import { v } from "convex/values";
 import {requireUser} from "./helper"
 // import { stripe } from "./stripe";
 
+
 export const listTodos = query(
     {handler: async (ctx) => {
         const user = await requireUser(ctx);
@@ -12,6 +13,7 @@ export const listTodos = query(
         .collect();
     }}
 )
+
 
 export const createTodo = mutation({
     args: {
@@ -28,6 +30,8 @@ export const createTodo = mutation({
             });
     },
 });
+
+
 export const updateTodo = mutation({
     args: {
         id: v.id("todos"),
@@ -44,6 +48,8 @@ export const updateTodo = mutation({
             });
     },
 });
+
+
 export const deleteTodo = mutation({
     args: {
         id: v.id("todos"),
@@ -57,6 +63,8 @@ export const deleteTodo = mutation({
         await ctx.db.delete(args.id);
     },
 });
+
+
 export const createManyTodos = internalMutation({
     args: {
         userID: v.string(),
@@ -76,6 +84,7 @@ export const createManyTodos = internalMutation({
         }
     },
 });
+
 
 // export const createDonationSession = action({
 //   args: {
