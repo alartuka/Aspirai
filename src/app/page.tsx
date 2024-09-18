@@ -20,37 +20,41 @@ export default function Home() {
 
         <Container maxWidth="md" sx={{ py: 4 }}>
 
-          <Box sx={{ mb: 4 }}>
-            <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
-              Task List
-            </Typography>
-            <ToDoList />
-          </Box>
-
-          <Box sx={{ mb: 4 }}>
+          <Box sx={{ mb: 5 }}>
             <GenerateTodosForm />
           </Box>
 
-          <Box>
+          <Box sx={{ mb: 8 }}>
             <NewToDoForm />
+          </Box>
+
+          <Box sx={{ mb: 4 }}>
+
+            <Typography variant="h4" component="h2" gutterBottom fontWeight="bold">
+              Task List
+            </Typography>
+
+            <ToDoList />
+
           </Box>
 
         </Container>
       </Authenticated>
 
+      {/* Landing Page - only for unauthenticated users */}
       <Unauthenticated>
         <Box sx={{ py: 8 }}>
-
           <Hero />
           <Features />
-
-          <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-            <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
-          </Box>
-
         </Box>
       </Unauthenticated>
 
+      {/* Copyrights Tag */}
+      <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+        <Typography variant="body1">&copy; {new Date().getFullYear()} Aspirai. All rights reserved.</Typography>
+      </Box>
+
+      {/* Loading Page - while fetching user*/}
       <AuthLoading>
         <Loading />
       </AuthLoading>
