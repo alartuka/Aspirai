@@ -4,12 +4,14 @@ import { Menu as MenuIcon } from '@mui/icons-material';
 import { UserButton } from "@clerk/nextjs";
 
 
-function NavBar() {
-  const [anchorEl, setAnchorEl] = useState(null);
+export default function NavBar() {
+    // Update the state initialization
+    const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
-  const handleMenuOpen = (event: any) => {
-    setAnchorEl(event.currentTarget);
-  };
+    const handleMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+        setAnchorEl(event.currentTarget as HTMLElement);
+    };
+
 
   const handleMenuClose = () => {
     setAnchorEl(null);
@@ -66,5 +68,3 @@ function NavBar() {
     </AppBar>
   );
 }
-
-export default NavBar;
