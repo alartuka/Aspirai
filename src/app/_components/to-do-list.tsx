@@ -1,7 +1,7 @@
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 import { Id } from "../../../convex/_generated/dataModel";
-import { Box, Grid, Card, CardContent, Checkbox, Typography, Button, Stack } from "@mui/material";
+import { Box, Grid, Card, CardContent, Checkbox, Typography, Button } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 
 export function ToDoList() {
