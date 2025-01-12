@@ -1,5 +1,4 @@
-# Welcome to Aspirai, your AI powered task creator and goal tracker!
-
+Welcome to Aspirai, your AI powered task creator and goal tracker!
 After logging in, users can break down a large goal into smaller tasks with the help of AI. Users can also create and add tasks manually. Completed tasks can be checked off and removed. 
 
 
