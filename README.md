@@ -1,5 +1,5 @@
 # Aspirai (Goal Getter Updated)
-`AI powered task creator and goal tracker`
+`AI-powered task creator and goal tracker`
 
 - This project was created as the final project for my Headstarter Fellowship 2024. 
 
@@ -16,7 +16,7 @@
 - **Customizable Plans:** Add your own custom tasks to create and personalize a plan that fits your unique needs and lifestyle
 - **Progress Tracking:** Visualize your progress in each plan and stay on top of your goals to keep you motivated and focused
 - **Task Management:** Mark tasks complete or remove them as necessary
-- **User-friendly Interface: Intuitive and easy to navigate
+- **User-friendly Interface:** Intuitive and easy to navigate
 
 ## Tech Stack
 - Next.js
@@ -38,9 +38,9 @@
 <hr />
 
 ### Click on the image below to see the ***DEMO*** of updated version on YouTube: <br />
-<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=" target="_blank">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=" target="_blank">
  <img src="http://img.youtube.com/vi//mqdefault.jpg" alt="Watch the video" width="300" height="100" border="10" />
-</a> -->
+</a> 
 
 
 ## Live Link
