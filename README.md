@@ -55,7 +55,3 @@
 - Special thanks to the [Headstarter](https://headstarter.co/) team for giving me the opportunity to learn and create such a project.
 
 
-## Let's Connect!
-- **Portfolio**: [tuka-alsharief.vercel.app](tuka-alsharief.vercel.app)
-
-- **LinkedIn**: [/in/tukaalarbi](linkedin.com/in/tukaalarbi)
